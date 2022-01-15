@@ -8,6 +8,14 @@ body{
 .container{
 	width: 1100px;
 	margin: 0 auto;
+	padding: 0 20px;
+	background-color: #FFFFFF;
+}
+hr{
+    border: 1px solid color #F3F1FF;
+    margin-bottom: 27px;
+	color: red;
+	width: 100%;
 }
 header{
 	width: 100%;
@@ -55,4 +63,55 @@ nav ul li a{
 }
 .button:hover{
 	background: maroon;
+}
+.area img{
+	width: 370px;
+	height: 370px;
+	padding-left: 100px;
+	background-color: #F7F0FF;
+	border-radius: 250px;
+}
+.logo{
+	margin-left: 110px;
+}
+.logo img{
+	margin-right: 30px;
+}
+
+.section-title{
+	text-align: center;
+	font-size: 25px;
+}
+.product{
+	box-shadow: 10px 10px 8px 8px #C3BEBE;
+	padding: 20px;
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+/*----------------------------------
+		footer  
+-------------------------------------*/
+.background{
+	height: 150px;
+	background-color: #0A0826;
+}
+h1{
+	color: #FFFFFF;
+	text-align: center;
+	padding-top: 10px;
+}
+h5{
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: -15px;
 }
