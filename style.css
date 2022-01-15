@@ -3,6 +3,7 @@
 body{
     margin: 0px;
     padding: 0px;
+	background-color: #E6E6E6;
     font-family: 'Poppins', sans-serif;
 }
 .container{
@@ -20,7 +21,7 @@ hr{
 header{
 	width: 100%;
 	height: 100px;
-	background: radial-gradient(#fff,#ffd6d6);
+	padding: 20px;
 }
 .title{
     font-size: 20px;
@@ -83,35 +84,120 @@ nav ul li a{
 	font-size: 25px;
 }
 .product{
-	box-shadow: 10px 10px 8px 8px #C3BEBE;
+	box-shadow: 4px 4px 4px 4px #C3BEBE;
 	padding: 20px;
+}
+.product-banner img{
+	width: 100%;
+    height: 220px;
+}
+.price{
+	font-size: 15px;
+	color: red;
+	margin-top: -15px;
 }
 .fa-star{
     font-size: 12px;
+	color: #FFC014;
 }
-.fa-star.filled{
-    color: #FFC014;
+.rating{
+    margin-top: -10px;
 }
 .products{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 24px;
 }
-
+.direction{
+	margin: 20px;
+	float: right;
+	color: salmon;
+}
+.managment-title{
+	float: left;
+	margin: 0px 250px;
+	text-align: center;
+	padding: 10px 5px;
+}
+.managment-title h3{
+	text-align: center;
+	font-size: 30px;
+}
+.managment-title p{
+	font-size: 20px;
+	margin-top: -21px;
+}
+.part{
+	width: 100%;
+}
+.member{
+	width: 50%;
+	float:left;
+}
+.member img{
+	width: 80px;
+	height: 100px;
+	margin: 0px 117px;
+	float: left;
+	box-shadow:100px;
+}
+.member h2{
+	width: 61%;
+    float: left;
+    color: green;
+    margin: 0px 68px;
+    font-size: 30px;
+}
+.member h4{
+	font-size: 18px;
+}
+.member p{
+	font-size: 16px;
+	margin: 4px;
+}
 /*----------------------------------
 		footer  
 -------------------------------------*/
 .background{
 	height: 150px;
-	background-color: #0A0826;
+	background-color: salmon;
 }
 h1{
 	color: #FFFFFF;
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 20px;
 }
 h5{
 	color: #FFFFFF;
 	text-align: center;
 	margin-top: -15px;
+}
+/*-----------------------
+	Media Queri
+-------------------------*/
+@media only screen and (max-width:688px){
+    .product{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container{
+        width: 100%;
+        background-color: #FF4A60;
+    }
+   .member{
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .product, .member{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container{
+        width: 100%;
+    }
+    .product, .member{
+        flex-direction: column;
+    }
+    body, header{
+        background-color: #FF4A60;
+    }
 }
