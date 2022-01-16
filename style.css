@@ -18,7 +18,6 @@ hr{
 	color: red;
 	width: 100%;
 }
-
 .logo{
 	width:30%;
 	float:left;
@@ -30,7 +29,6 @@ hr{
 width:60%;
 	float:left;
 }
-
 .topNavBar{
 height:75px
 }
@@ -50,7 +48,6 @@ height:75px
 	text-decoration: none;
 	font-size: 20px;
 }
-
 .bold{
     font-size: 50px;
 }
@@ -71,21 +68,12 @@ height:75px
 .button:hover{
 	background: maroon;
 }
-.area img{
-	width: 370px;
-	height: 370px;
-	padding-left: 100px;
-	background-color: #F7F0FF;
-	border-radius: 250px;
-}
 .brand{
 	margin-left: 110px;
 }
-
 .brand img{
 	margin-right: 30px;
 }
-
 .section-title{
 	text-align: center;
 	font-size: 25px;
@@ -93,6 +81,7 @@ height:75px
 .product{
 	box-shadow: 4px 4px 4px 4px #C3BEBE;
 	padding: 20px;
+	width: 300px;
 }
 .product-banner img{
 	width: 100%;
@@ -111,7 +100,6 @@ height:75px
     margin-top: -10px;
 }
 .products{
-	
    display: flex;
    gap: 10px 20px;
 	justify-content:space-between;
@@ -122,10 +110,9 @@ height:75px
 	margin: 20px;
 	float: right;
 	color: salmon;
+	text-decoration: none;
 }
 .managment-title{
-	height:300px;
-	margin: 0px 250px;
 	text-align: center;
 	padding: 10px 5px;
 }
@@ -133,33 +120,22 @@ height:75px
 	text-align: center;
 	font-size: 30px;
 }
-.managment-title p{
-	font-size: 20px;
-	margin-top: -21px;
-}
-.part{
-	height:300px;
-}
 .member{
-	width: 50%;
-	float:left;
+	width: 100%;
 }
 .member img{
-	width: 80px;
-	height: 100px;
-	margin: 0px 117px;
-	float: left;
-	box-shadow:100px;
+    width: 240px;
+    height: 250px;
+    align-items: center;
 }
 .member h2{
-	width: 61%;
-    float: left;
-    color: green;
+	color: green;
     margin: 0px 68px;
     font-size: 30px;
 }
 .member h4{
 	font-size: 18px;
+	margin-top: -6px;
 }
 .member p{
 	font-size: 16px;
@@ -168,9 +144,12 @@ height:75px
 /*----------------------------------
 		footer  
 -------------------------------------*/
+footer{
+	margin: -20px;
+}
 .background{
-	height: 100px;
-	background-color: salmon;
+	background-color: #0A0826;
+	width: 100%;
 }
 .background h1{
 	color: #FFFFFF;
@@ -186,25 +165,25 @@ height:75px
 	Media Queri
 -------------------------*/
 @media only screen and (max-width:688px){
-    .product{
+    .container, .topNavBar, .brand, .area, .products, .member{
         grid-template-columns: repeat(1, 1fr);
     }
     .container{
         width: 100%;
         background-color: #FF4A60;
     }
-   .member{
+   .header{
         flex-direction: column;
     }
 }
 @media only screen and (min-width:688px) and (max-width:992px){
-    .product, .member{
+    .container, .topNavBar, .brand, .area, .products, .member{
         grid-template-columns: repeat(2, 1fr);
     }
     .container{
         width: 100%;
     }
-    .product, .member{
+    .product, .header .member{
         flex-direction: column;
     }
     body, header{
